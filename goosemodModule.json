@@ -6,5 +6,8 @@
   "description": "Adds a send button, similar to the mobile application.",
   "tags": ["quick-actions"],
   "authors": ["441384103946878987"],
-  "images": []
+  "images": [
+    "https://raw.githubusercontent.com/Controlfreak707/GM-Send-Button/main/images/image-a.png",
+    "https://raw.githubusercontent.com/Controlfreak707/GM-Send-Button/main/images/image-b.png"
+  ]
 }
