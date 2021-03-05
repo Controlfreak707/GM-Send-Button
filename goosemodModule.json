@@ -1,6 +1,6 @@
 {
   "main": "src/index.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
 
   "name": "Send Button",
   "description": "Adds a send button, similar to the mobile application.",

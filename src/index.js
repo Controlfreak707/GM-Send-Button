@@ -1,3 +1,5 @@
+import { name, version } from "../goosemodModule.json";
+
 let settings = {
   mobileIcon: false,
 };
@@ -52,11 +54,7 @@ const setMobileIcon = (value) => {
 export default {
   goosemodHandlers: {
     onImport: async () => {
-      setMobileIcon(settings.mobileIcon);
-    },
-
-    onLoadingFinished: async () => {
-      goosemodScope.settings.createItem("Send Button", [
+      goosemodScope.settings.createItem(name, [
         `(v${version})`,
         {
           type: "toggle",
@@ -67,10 +65,12 @@ export default {
           isToggled: () => settings.mobileIcon,
         },
       ]);
+
+      setMobileIcon(settings.mobileIcon);
     },
 
     onRemove: async () => {
-      goosemodScope.settings.removeItem("Send Button");
+      goosemodScope.settings.removeItem(name);
       unpatchChannelTextAreaButton();
     },
 
